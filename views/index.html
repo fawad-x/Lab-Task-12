@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Complaint Form</h1>
+    
+    <form id="complaintForm">
+        Name: <br>
+        <input type="text" name="name" placeholder="Enter your name" required><br><br>
+        
+        Phone: <br>
+        <input type="text" name="phone" placeholder="Enter phone number" required><br><br>
+        
+        Address: <br>
+        <input type="text" name="location" placeholder="Enter your address" required><br><br>
+        
+        Problem: <br>
+        <textarea name="problem" rows="4" placeholder="Describe your problem..." required></textarea><br><br>
+        
+        <button type="submit">Submit Complaint</button>
+    </form>
+    
+    <div id="result"></div>
+    
+    <br><hr>
+    <p>
+        <a href="/track">Track Complaint</a> | 
+        <a href="/admin">Admin Login</a>
+    </p>
+    
+    <script src="/js/validation.js"></script>
+    <script src="/js/form-submit.js"></script>
+</body>
+</html>

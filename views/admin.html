@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    
+    <div style="margin-bottom: 20px;">
+        <button onclick="loadComplaints()">Refresh Complaints</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    
+    <div id="complaintsList">
+        <p>Loading complaints...</p>
+    </div>
+    
+    <br><hr>
+    <p><a href="/">Go to Home Page</a></p>
+    
+    <script src="/js/admin.js"></script>
+    
+    <script>
+        // Load complaints when page opens
+        window.onload = function() {
+            loadComplaints();
+        };
+        
+        function logout() {
+            if (confirm("Are you sure you want to logout?")) {
+                window.location.href = "/";
+            }
+        }
+    </script>
+</body>
+</html>
